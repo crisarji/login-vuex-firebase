@@ -1,0 +1,78 @@
+// imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+// colors
+$primary: #30A0EE;
+$error: #ef5777;
+$success: #1abc9c;
+$light: #F5F8FA;
+$medium: #657786;
+$dark: #34495E;
+$white: #fff;
+
+// resets
+body {
+	margin: 0;
+	color: $dark;
+	background: #E6ECF0;
+}
+
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	transition: 0.15s;
+
+	&:focus {
+		outline: none;
+	}
+}
+
+// fonts
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0 0 0.5rem;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.6rem;
+}
+
+h4 {
+	font-size: 1.4rem;
+}
+
+h5 {
+	font-size: 1.2rem;
+}
+
+p {
+	line-height: 1.5;
+}
+
+a {
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	color: $primary;
+	margin: 0;
+	cursor: pointer;
+
+	&:hover {
+		color: lighten($primary, 5%);
+	}
+}
